@@ -1,0 +1,72 @@
+.tabsContainer {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 10px 0 25px 0;
+  scrollbar-width: none;
+}
+
+.tabsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.tabBtn {
+  background-color: #1a1a1a;
+  color: #ccc;
+  border: 1px solid #333;
+  padding: 10px 22px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.tabBtn:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+.tabBtn.active {
+  background-color: #e50914;
+  color: #fff;
+  border-color: #e50914;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+}
+
+.title {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.loadingText {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #aaa;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+}

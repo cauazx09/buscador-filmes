@@ -1,0 +1,191 @@
+.loadingText {
+  text-align: center;
+  margin-top: 80px;
+  color: #aaa;
+  font-size: 1.2rem;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  padding: 30px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 25px;
+  text-decoration: none;
+  color: #e50914; /* Vermelho estilo Netflix/PobreFlix */
+  font-weight: bold;
+  font-size: 1.05rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.backLink:hover {
+  color: #ff3b45;
+  transform: translateX(-4px);
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* Container da coluna de imagens */
+.imagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  flex-shrink: 0;
+  width: 300px;
+}
+
+/* Capa/Pôster do Filme */
+.poster {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  border: 1px solid #333;
+  object-fit: cover;
+}
+
+.coatTitle {
+  text-align: center;
+  margin: 15px 0 8px 0;
+  color: #888;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.backdropImage {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  border: 1px solid #222;
+  object-fit: cover;
+}
+
+/* Caixa com as informações detalhadas */
+.infoContainer {
+  flex: 1;
+  min-width: 300px;
+  background-color: rgba(20, 20, 20, 0.85);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #2a2a2a;
+}
+
+.movieTitle {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.tagline {
+  color: #8c8c8c;
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Badges/Etiquetas de Nota e Duração */
+.badges {
+  margin: 20px 0;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ratingBadge {
+  background-color: #e50914;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.runtimeBadge {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Seção da Sinopse */
+.overviewSection {
+  margin: 25px 0;
+}
+
+.overviewSection h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.overviewSection p {
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Lista de Detalhes Adicionais */
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+.detailItem {
+  line-height: 1.5;
+}
+
+.detailLabel {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.detailValue {
+  color: #b0b0b0;
+  margin-left: 6px;
+}
+
+/* Ajustes para Telemóvel/Ecrãs Pequenos */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagesContainer {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .infoContainer {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .movieTitle {
+    font-size: 1.8rem;
+  }
+}
