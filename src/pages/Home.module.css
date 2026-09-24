@@ -70,3 +70,50 @@
     font-size: 1.4rem;
   }
 }
+
+/* Estilos da Paginação */
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 40px 0 20px 0;
+  padding: 10px 0;
+}
+
+.pageBtn {
+  background-color: #222222;
+  color: #ffffff;
+  border: 1px solid #333333;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Efeito ao passar o rato no botão (quando ativo) */
+.pageBtn:hover:not(:disabled) {
+  background-color: #e50914; /* Vermelho PobreFlix */
+  border-color: #e50914;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.3);
+}
+
+/* Estilo do botão desativado (primeira/última página) */
+.pageBtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  border-color: #222222;
+}
+
+.pageInfo {
+  color: #b3b3b3;
+  font-size: 0.95rem;
+  font-weight: 500;
+  user-select: none;
+}
